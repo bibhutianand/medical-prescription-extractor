@@ -22,7 +22,7 @@ To extract key fields like patient name, date, doctor info, medicines, dosage, f
 
 ## 🔍 Model & Pipeline
 
-We used the `Donut` model (`naver-clova-ix/donut-base-finetuned-docvqa`) for its ability to perform document visual QA and structured extraction.
+I used the `Donut` model (`naver-clova-ix/donut-base-finetuned-docvqa`) for its ability to perform document visual QA and structured extraction.
 
 ### Steps:
 1. Load and preprocess the scanned image
