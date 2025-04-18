@@ -30,3 +30,24 @@ We used the `Donut` model (`naver-clova-ix/donut-base-finetuned-docvqa`) for its
 3. Parse and store the generated JSON output
 
 ### Folder Structure:
+
+---
+
+## ✅ Sample Output (JSON)
+
+```json
+{
+  "patient_name": "Aarav",
+  "date": "13/11/19",
+  "doctor_name": "Dr. Sanjeev Kumar Sharma",
+  "medications": [
+    {
+      "name": "Cef",
+      "dosage": "92.5mg",
+      "frequency": "1/2 tsp",
+      "duration": "6 hours"
+    },
+    ...
+  ],
+  "note": "Nebul. On advice of dr. Doscor – oral syrup"
+}
