@@ -1,28 +1,32 @@
 # medical-prescription-extractor
 Pipeline to extract structured data from handwritten medical prescriptions using a multimodal LLM.
-# Medical Prescription Extractor
+# 🧠 Medical Prescription Extractor
 
-This project builds a multimodal LLM pipeline (using Donut or Pix2Struct) to extract structured information from scanned handwritten medical prescriptions.
+A pipeline that uses a multimodal large language model (Donut) to extract structured data from scanned handwritten medical prescriptions.
 
-## 🔧 Tech Stack
-- Python
-- HuggingFace Transformers
-- Donut or Pix2Struct
-- PyTorch / TensorFlow
+---
 
-## 📁 Folder Structure
+## 📌 Objective
 
-- `model/`: Model pipeline code
-- `utils/`: Preprocessing utilities
-- `data/`: Sample input images
-- `outputs/`: Generated structured outputs
-- `evaluation/`: Evaluation metrics and scripts
+To extract key fields like patient name, date, doctor info, medicines, dosage, frequency, and instructions from handwritten prescriptions using open-source multimodal LLMs.
 
-## 🧠 Model Used
+---
 
-Donut (OCR-free Vision+Language model for document parsing)
+## 📊 Dataset
 
-## 📊 Evaluation Strategy
+- **Name:** Medical Prescription Images Dataset
+- **Description:** Scanned images of handwritten medical prescriptions
+- **Sample Image Used:** `prescription_01.jpg`
 
-- Field-level accuracy
-- Manual validation
+---
+
+## 🔍 Model & Pipeline
+
+We used the `Donut` model (`naver-clova-ix/donut-base-finetuned-docvqa`) for its ability to perform document visual QA and structured extraction.
+
+### Steps:
+1. Load and preprocess the scanned image
+2. Use a prompt to guide Donut to extract structured data
+3. Parse and store the generated JSON output
+
+### Folder Structure:
