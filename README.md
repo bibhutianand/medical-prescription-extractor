@@ -30,8 +30,17 @@ We used the `Donut` model (`naver-clova-ix/donut-base-finetuned-docvqa`) for its
 3. Parse and store the generated JSON output
 
 ### Folder Structure:
-
----
+medical-prescription-extractor/
+│
+├── model/
+│   └── donut_pipeline.py          
+│
+├── evaluation/
+│   └── evaluate.py                # Code to evaluate the model
+│
+├── README.md                      
+├── presentation.pdf               
+└── requirements.txt 
 
 ## ✅ Sample Output (JSON)
 
